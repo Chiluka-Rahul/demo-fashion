@@ -1,0 +1,30 @@
+.nav-nav {
+    margin-top: 20px;
+  overflow: hidden;
+  background-color: rgba(97, 92, 92, 0.3);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  
+}
+
+
+.wrapper-nav{
+    display: flex;
+    gap: 50px;
+    margin-bottom: 80px;
+}
+
+.container-nav{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 10px;
+}
+
+@media only screen and (min-width: 1000px) {
+   
+    .wrapper-nav{
+        margin-bottom: 0px;
+        justify-content: space-between;
+    }
+}

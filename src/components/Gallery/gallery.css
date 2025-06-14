@@ -1,0 +1,114 @@
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+
+.parallax-container {
+    display: flex;
+    flex-direction: column;
+    /* justify-content: center; */
+    align-items: center;
+    min-height: 100vh;
+    overflow: hidden;
+
+
+  .parallax-images {
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    position: relative;
+    margin-top: 5vh;
+
+    .image-container {
+      position: absolute;
+      .image-middle-text{
+        font-size: 12px;
+        font-weight: 600;
+        margin-bottom: 3px;
+      }
+      .image-text-parallel{
+        font-size: 9.5px;
+        margin-bottom: 3px;
+      }
+      img {
+        object-fit: cover;
+        width: 100%;
+        height: 100%;
+      }
+
+      &:nth-of-type(1) {
+        height: 60vh;
+        width: 50vh;
+        z-index: 1;
+      }
+
+      &:nth-of-type(2) {
+        left: 65vw;
+        top: 15vh;
+        height: 40vh;
+        width: 30vh;
+        z-index: 2;
+      }
+
+      &:nth-of-type(3) {
+        left: 24.5vw;
+        top: 40vh;
+        height: 25vh;
+        width: 20vh;
+        z-index: 3;
+      }
+    }
+  }
+}
+.parallex-view-all{
+    position: absolute;
+    bottom: 0;
+}
+
+
+.parallex-heading {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 4rem;
+  text-align: center;
+  font-family: "Dancing Script", cursive;
+  padding: 0 2rem;
+}
+
+.parallex-text {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  flex-wrap: wrap;
+  overflow: hidden;
+  opacity: 0;
+  transition: opacity 0.1s ease-in-out;
+}
+
+.parallex-text.ready-text {
+  opacity: 1;
+}
+
+.span-letter {
+  display: inline-block;
+  transform: translateY(200%);
+  will-change: transform;
+  backface-visibility: hidden;
+  margin: 0.05rem;
+  transition: transform 1s ease-out;
+  font-size: 3.2rem;
+  font-weight: 500;
+  color: #111; /* change to white if dark background */
+  text-transform: none;
+  letter-spacing: 1px;
+  font-family: 'Great Vibes', cursive;
+}
+
+.span-letter.active-2 {
+  transform: translateY(0%);
+}
+
+.gap {
+  width: 0.6rem;
+  display: inline-block;
+}

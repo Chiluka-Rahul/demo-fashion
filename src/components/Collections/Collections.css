@@ -1,0 +1,132 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@1,600&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&display=swap');
+
+.collections-rapid{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+}
+.collections-wrapper {
+  padding: 5rem 3rem;
+  background-color: #fff;
+}
+
+.collections-title {
+  font-size: 3.2rem;
+  font-family: "Dancing Script", cursive;
+  font-weight: 500;
+  text-align: center;
+  margin-bottom: 4rem;
+  color: #111;
+}
+
+.italic-highlight {
+  font-style: italic;
+}
+
+.collections-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 20px;
+  padding-left: 10rem;
+}
+
+.vertical-text {
+  writing-mode: vertical-rl;
+  transform: rotate(180deg);
+  font-size: 2rem;
+  font-style: italic;
+  color: #222;
+  margin-right: 2rem;
+  white-space: nowrap;
+  padding-top: 0.9rem;
+}
+
+.collections-scroll {
+  display: flex;
+  gap: 2rem;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  padding-bottom: 2rem;
+  margin-left: 2rem;
+  scrollbar-width: none;
+}
+
+.collections-scroll::-webkit-scrollbar {
+  display: none;
+}
+
+.collections-card-wrapper {
+  display: flex;
+  flex-direction: column;
+  scroll-snap-align: start;
+}
+
+.product-index {
+  font-size: 0.9rem;
+  font-weight: 400;
+  color: #666;
+  text-align: start;
+  margin-bottom: 0.6rem;
+  padding-left: 0.4rem;
+}
+
+.collections-card {
+  width: 280px;
+  height: 420px;
+  border-radius: 1rem;
+  overflow: hidden;
+  background-color: #f8f8f8;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  position: relative;
+}
+
+.img-wrapper {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.img {
+  width: 130%;
+  height: 100%;
+  background-size: cover;
+  background-position: center;
+  transition: transform 0.2s ease-out;
+  position: absolute;
+  top: 0;
+  left: -15%;
+}
+
+.product-details {
+  position: relative;
+  z-index: 2;
+  background-color: rgba(255, 255, 255, 0.92);
+  padding: 1rem;
+  text-align: left;
+  font-size: 0.95rem;
+  color: #111;
+}
+
+.product-details h4 {
+  margin: 0;
+  font-weight: 500;
+  font-size: 1rem;
+}
+
+.product-details p {
+  margin: 0.2rem 0;
+}
+
+.price {
+  font-weight: 500;
+}
