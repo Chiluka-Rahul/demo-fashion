@@ -11,7 +11,9 @@
 .wrapper-nav{
     display: flex;
     gap: 50px;
-    margin-bottom: 80px;
+    justify-content: space-between;
+    flex-shrink: 0;
+    padding: 10px;
 }
 
 .container-nav{
@@ -20,15 +22,15 @@
     justify-content: space-between;
     padding: 10px;
 }
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 608px) {
   .navbody-columns {
     flex-direction: column;
-    gap: 30px;
+    gap: 30px !important;
   }
 
    .wrapper-nav {
     flex-direction: column;
-    gap: 30px;
+    gap: 10px;
   }
 
   .container-nav {
