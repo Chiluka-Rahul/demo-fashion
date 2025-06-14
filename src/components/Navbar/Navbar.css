@@ -131,7 +131,7 @@
 
 @media only screen and (max-width: 600px) {
     .header{
-        padding: 20px;
+        padding: 20px 10px;
     }
     .bar{
         font-size: 15px;
@@ -141,4 +141,10 @@
         display: block;
         cursor: pointer;
     }
+    .shopContainer{
+        bottom: -10px;
+        gap: 12px;
+        padding: 8px 0px ;
+    }
 }
+
