@@ -130,3 +130,86 @@
 .price {
   font-weight: 500;
 }
+
+@media screen and (max-width: 768px) {
+  .collections-wrapper {
+    padding: 3rem 1.5rem;
+  }
+
+  .collections-title {
+    font-size: 2.4rem;
+    margin-bottom: 2.5rem;
+  }
+
+  .collections-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    padding-left: 15px;
+    /* align-items: flex-start; */
+  }
+
+  .vertical-text {
+    display: block;
+    writing-mode: horizontal-tb;
+    transform: none;
+    font-size: 1rem;
+    margin-top: 1rem;
+    text-align: center;
+    color: #444;
+    font-style: italic;
+    /* padding: 0.5rem 1rem; */
+    order: 2; /* Ensures it's placed after .collections-scroll */
+  }
+
+
+  .collections-scroll {
+    gap: 1rem;
+    margin-left: 0;
+    width: 100%;
+    padding-bottom: 1rem;
+  }
+
+  .collections-card {
+    width: 220px;
+    height: 340px;
+  }
+
+  .img {
+    width: 120%;
+    left: -10%;
+  }
+
+  .product-details {
+    font-size: 0.85rem;
+    padding: 0.8rem;
+  }
+
+  .product-details h4 {
+    font-size: 0.95rem;
+  }
+
+  .product-index {
+    font-size: 0.8rem;
+    padding-left: 0.2rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .collections-title {
+    font-size: 2rem;
+  }
+
+  .collections-card {
+    width: 180px;
+    height: 300px;
+  }
+
+  .product-details {
+    font-size: 0.75rem;
+  }
+
+  .product-details h4 {
+    font-size: 0.85rem;
+  }
+}

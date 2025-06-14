@@ -96,9 +96,9 @@ export default function Contact() {
 
 
     <address className="showroom-address">
-      <strong>Fake Address</strong><br />
-      123 Leatherworks Avenue<br />
-      Suite #5, Manhattan, NY 10010
+      <strong>Creative Address</strong><br />
+      Indian, Wealthy state<br />
+      Chiluka's house, Rohith & Rahul
     </address>
 
     <div className="contact-icons">

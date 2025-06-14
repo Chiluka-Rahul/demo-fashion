@@ -112,3 +112,35 @@
   width: 0.6rem;
   display: inline-block;
 }
+
+
+@media (max-width: 768px) {
+  .parallax-container{
+    margin: 0.5rem 0.2rem;
+  }
+  .parallex-heading {
+    margin-top: 2rem;
+    padding: 0 1rem;
+  }
+
+  .parallex-text {
+    flex-wrap: wrap;
+    font-size: 1.8rem;
+    line-height: 2rem;
+    padding: 0 1rem;
+  }
+  .image-middle-text{
+      display: none;
+    }
+    .image-text-parallel{
+      display: none;
+    }
+  .span-letter {
+    font-size: 1.8rem; 
+    letter-spacing: 0.5px;
+  }
+
+  .gap {
+    width: 0.4rem;
+  }
+}

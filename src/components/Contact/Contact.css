@@ -241,3 +241,49 @@
     font-size: 6rem;
   }
 }
+
+
+@media (max-width: 480px) {
+  .contact-box {
+    width: 90%;
+    padding: 1.5rem;
+  }
+
+  .contact-heading {
+    font-size: 1.3rem;
+  }
+
+  .contact-input {
+    font-size: 0.95rem;
+  }
+
+  .contact-btn {
+    font-size: 0.85rem;
+    padding: 0.5rem 1.2rem;
+  }
+
+  .leather-info-box {
+    max-width: 90%;
+    padding: 0.8rem;
+    font-size: 0.85rem;
+  }
+
+  .shop-link {
+    font-size: 0.8rem;
+  }
+
+  .showroom-address {
+    font-size: 1rem;
+  }
+
+  .contact-bg {
+    font-size: 4.5rem;
+    left: 10px;
+  }
+
+  .div-division {
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+  }
+}
