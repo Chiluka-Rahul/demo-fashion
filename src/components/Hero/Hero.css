@@ -22,7 +22,7 @@
   height: 100%;
   object-fit: cover;
   z-index: 1;
-  filter: brightness(75%) blur(0.08rem);
+  filter: brightness(90%);
 }
 
 /* Container for Titles */
@@ -121,4 +121,43 @@
   font-size: 3rem;
   color: #fff;
   text-align: center;
+}
+
+
+@media screen and (max-width: 768px) {
+  .hero-bg {
+    height: 100vh;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .video-bg-bg {
+    filter: brightness(70%) blur(0.05rem);
+  }
+
+  .title-home-container {
+    height: auto;
+    padding: 2rem 1rem;
+    text-align: center;
+  }
+
+  .home-list {
+    gap: 20px;
+    padding: 0 1rem;
+  }
+
+  .home-list .listt .spann {
+    font-size: 2.4rem;
+    line-height: 3rem;
+  }
+
+  .elegant .spann {
+    font-size: 2rem;
+    letter-spacing: 0.5px;
+  }
+
+  .gap {
+    width: 0.5rem;
+  }
 }
